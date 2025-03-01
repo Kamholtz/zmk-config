@@ -88,7 +88,7 @@
   >;
   }; 
 
-  bt {
+    bt { //                                                   |
   bindings = <
   &trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans 
   &trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans 
