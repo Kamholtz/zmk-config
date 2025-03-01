@@ -67,15 +67,20 @@
         layer_1 {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp ESC     &kp EXCL         &kp ATSN        &td LC(LG(LS(N4))) LS(N3) &kp DLLR         &kp PRCNT          &mmv MOVE_DOWN   &kp CARET        &kp LS(COMMA)    &kp LS(DOT) &kp SEMI   &kp BKSP          &trans
+&kp TAB     &trans           &kp EQUAL       &kp LA(RBKT)              &kp LA(LS(RBKT)) &kp SQT            &mmv MOVE_LEFT   &kp BSLH         &kp LBRC         &kp RBRC    &kp PIPE   &kp ENTER         &kp EQUAL
+&trans      &kp TILDE        &kp LA(N3)      &kp LA(LBKT)              &kp LA(LS(LBKT)) &kp DQT            &mmv MOVE_RIGHT  &kp LBKT         &kp LPRN         &kp RPRN    &kp RBKT   &to 3             &trans
+&kp C_MUTE  &trans           &trans          &trans                    &to 0            &sk LSHIFT         &mkp LCLK        &sk RALT         &to 2            &trans      &trans     &trans
             >;
 
             display-name = "layer1";
             sensor-bindings = <&scroll_encoder>;
         };
+
+// &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK                 &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+// &trans      &kp TILDE        &trans          &trans                    &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+// &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF           &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+// &kp C_MUTE  &trans           &trans          &trans                    &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
 
         layer_2 {
             bindings = <
@@ -88,6 +93,11 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
+                                                                          &mmv MOVE_UP           
+// &trans  &kp ESC  &kp C_PP     &kp C_PREV    &kp C_NEXT    &kp LS(MINUS)   &mmv MOVE_DOWN    &kp MINUS  &kp N7 &kp N8 &kp N9 &trans       &trans
+// &trans  &kp TAB  &trans       &kp C_VOL_DN  &kp C_VOL_UP  &kp LS(EQUAL)   &mmv MOVE_LEFT    &kp EQUAL  &kp N4 &kp N5 &kp N6 &kp ENTER    &trans
+// &trans  &to 4    &kp AMPS     &kp SLASH     &kp STAR      &kp DOT         &mmv MOVE_RIGHT   &kp N0     &kp N1 &kp N2 &kp N3 &trans       &trans
+// &trans  &trans   &trans       &trans        &to 0         &sk LGUI        &mkp LCLK         &sk RALT   &to 2  &trans &trans &trans       &trans
 
         layer_3 {
             bindings = <
@@ -98,5 +108,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
+
+// &trans  &trans              &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT &kp NUM_5  &trans &kp LG(LBKT)   &kp LC(LS(TAB))   &kp RC(TAB)   &kp LG(RBKT) &trans
+// &trans  &kp F1              &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &kp DEL    &trans &kp LEFT       &kp DOWN          &kp UP        &kp RIGHT    &kp ENTER 
+// &trans  &td LG(GRAVE) GRAVE &mkp RCLK           &mwh SCROLL_UP  &mwh SCROLL_DOWN  &trans     &trans &mkp LCLK      &kp PG_DN         &kp K_VOL_DN  &trans       &trans   
+// &trans  &trans              &trans              &trans          &to 0             &trans     &trans &sk RALT &to 1 
     };
 };
