@@ -5,6 +5,7 @@
 */
 
 // REFERENCE: https://github.com/benvallack/zmk-config/blob/84ae125986b18e1e6dfb1f2a6a15777429f29520/config/cradio.keymap
+// https://www.youtube.com/watch?v=8wZ8FRwOzhU&list=PLCZYyvXAdQpsEWfa6OEBOhHn48SWgneoD&index=8
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -50,10 +51,12 @@ keymap {
 
     //layer 1
     default_layer { //                                              |
+            //                                                                                                     &td MINUS COMMA  &kp BKSP
+            // TODO replace X key
         bindings = <
-            &kp Y &kp C &kp L      &kp M                &kp K            &kp Z     &kp F      &kp U                &td MINUS COMMA  &kp BKSP
-            &kp I &kp S &hm LALT R &hm LGUI T           &kp G            &kp P     &hm RGUI N &hm RALT E           &kp A            &kp O
-            &kp Q &kp V &kp W      &kp D                &kp J            &kp B     &kp H      &td UNDERSCORE SLASH &td EXCL DOT     &kp X
+            &kp Q &kp W &kp E      &kp R                &kp T            &kp Y     &kp U      &kp I                &kp O            &kp P
+            &kp A &kp S &hm LALT D &hm LGUI F           &kp G            &kp H     &hm RGUI J &hm RALT K           &kp L            &kp SEMI
+            &kp Z &kp X &kp C      &kp V                &kp B            &kp N     &kp M      &td UNDERSCORE SLASH &td EXCL DOT     &kp X
                                    &mt LC(LS(LALT)) SPC &sk LSHIFT       &sk RCTRL &to 1
         >;
     };
