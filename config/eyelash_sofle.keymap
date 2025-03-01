@@ -66,7 +66,7 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&kp GRAVE   &kp F1           &kp F2          &kp F3                    &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
 &kp ESC     &kp EXCL         &kp ATSN        &td LC(LG(LS(N4))) LS(N3) &kp DLLR         &kp PRCNT          &mmv MOVE_DOWN   &kp CARET        &kp LS(COMMA)    &kp LS(DOT) &kp SEMI   &kp BKSP          &trans
 &kp TAB     &trans           &kp EQUAL       &kp LA(RBKT)              &kp LA(LS(RBKT)) &kp SQT            &mmv MOVE_LEFT   &kp BSLH         &kp LBRC         &kp RBRC    &kp PIPE   &kp ENTER         &kp EQUAL
 &trans      &kp TILDE        &kp LA(N3)      &kp LA(LBKT)              &kp LA(LS(LBKT)) &kp DQT            &mmv MOVE_RIGHT  &kp LBKT         &kp LPRN         &kp RPRN    &kp RBKT   &to 3             &trans
@@ -113,5 +113,5 @@
 // &trans  &kp F1              &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &kp DEL    &trans &kp LEFT       &kp DOWN          &kp UP        &kp RIGHT    &kp ENTER 
 // &trans  &td LG(GRAVE) GRAVE &mkp RCLK           &mwh SCROLL_UP  &mwh SCROLL_DOWN  &trans     &trans &mkp LCLK      &kp PG_DN         &kp K_VOL_DN  &trans       &trans   
 // &trans  &trans              &trans              &trans          &to 0             &trans     &trans &sk RALT &to 1 
-    };
+    };                                                                                 
 };
